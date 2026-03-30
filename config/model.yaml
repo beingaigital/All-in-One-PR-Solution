@@ -1,0 +1,29 @@
+# PRClaw 模型配置
+# main 模型用于 ReAct Agent 的推理与工具路由。
+
+main:
+  provider: openai_compatible
+  model: qwen3.5-plus
+  api_key_env: APIKEY
+  base_url: https://coding.dashscope.aliyuncs.com/v1
+  kwargs:
+    temperature: 0.2
+
+text_generation:
+  provider: openai_compatible
+  model: qwen3.5-plus
+  api_key_env: APIKEY
+  base_url: https://coding.dashscope.aliyuncs.com/v1
+
+# 预留 profile，可在后续新增工具中按需调用
+element_extraction:
+  provider: openai_compatible
+  model: qwen3.5-plus
+  api_key_env: APIKEY
+  base_url: https://coding.dashscope.aliyuncs.com/v1
+
+code_generation:
+  provider: openai_compatible
+  model: qwen3.5-plus
+  api_key_env: APIKEY
+  base_url: https://coding.dashscope.aliyuncs.com/v1

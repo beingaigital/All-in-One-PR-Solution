@@ -1,0 +1,28 @@
+# Agent Profile Layer 配置
+#
+# 作用：
+# - 将 IDENTITY/USER/SOUL/AGENT/MEMORY/TOOLS 等文件加载为系统上下文
+# - 通过长度和顺序控制，避免 prompt 失控
+
+enabled: true
+
+# 每个 profile 文件的最大注入字符数（超过会截断）
+max_chars_per_file: 2500
+
+# 注入顺序（按需调整）
+prompt_sections_order:
+  - identity
+  - soul
+  - user
+  - agent
+  - memory
+  - tools
+
+# 文件映射（相对项目根目录）
+files:
+  identity: IDENTITY.md
+  user: USER.md
+  soul: SOUL.md
+  agent: AGENT.md
+  memory: MEMORY.md
+  tools: TOOLS.md

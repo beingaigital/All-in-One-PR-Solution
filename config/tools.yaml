@@ -1,0 +1,18 @@
+# PRClaw 工具注册中心
+# 自动发现 tools/*.py 的 LangChain 工具，无需修改核心文件。
+
+auto_discover: true
+
+search_packages:
+  - tools
+
+include_modules: []
+
+exclude_modules:
+  - tools.__init__
+
+# 为空表示启用全部发现到的工具
+enabled_tools: []
+
+# 如需临时关闭某工具，在这里填写工具名
+disabled_tools: []

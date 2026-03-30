@@ -1,0 +1,46 @@
+# PRClaw Skills Layer
+# 通过 skills/*.md 定义可插拔能力，并按 query 自动激活。
+
+enabled: true
+auto_activate: true
+discover_files: false
+
+max_chars_per_skill: 2200
+max_active_skills: 3
+max_total_chars: 5200
+
+manual_activation:
+  always_on:
+    - strategy
+  disabled: []
+
+skills:
+  strategy:
+    file: skills/planning.md
+    enabled: true
+    priority: 98
+    keywords: ["公关", "传播", "方案", "策略", "campaign", "品牌", "定位", "传播目标"]
+
+  research:
+    file: skills/research.md
+    enabled: true
+    priority: 90
+    keywords: ["行业", "竞品", "舆情", "案例", "调研", "洞察", "趋势"]
+
+  creative_execution:
+    file: skills/coding.md
+    enabled: true
+    priority: 88
+    keywords: ["创意", "内容", "话题", "脚本", "短视频", "小红书", "活动"]
+
+  measurement:
+    file: skills/data-analysis.md
+    enabled: true
+    priority: 86
+    keywords: ["KPI", "ROI", "评估", "复盘", "效果", "预算", "排期"]
+
+  tool_extension:
+    file: skills/tool-extension.md
+    enabled: true
+    priority: 84
+    keywords: ["tool", "skill", "插件", "扩展", "自动化", "工作流改造"]

@@ -1,0 +1,34 @@
+# PRClaw 运行配置
+
+# 是否优先使用 prclaw 内置 UnifiedPRSystem（已本地化迁移）。
+use_embedded_unified_system: true
+
+# 内置 UnifiedPRSystem 的配置文件路径（相对 prclaw 根目录）。
+unified_config_path: "config/unified_config.yaml"
+
+# 若内置系统初始化失败，是否回退到外部 All-in-One 路径。
+allow_external_unified_fallback: false
+
+# 外部 All-in-One-PR-Solution 根目录（仅在回退启用时生效）。
+all_in_one_path: ".."
+
+# 默认输出模板类型（A-F）
+default_output_types:
+  - A
+  - B
+  - C
+
+# 默认是否启用内部知识图谱检索 / 外部检索
+default_use_graph_rag: true
+default_use_web_search: true
+
+web_search:
+  # auto: 优先 serper，失败后 fallback duckduckgo
+  # serper: 需要 SERPER_API_KEY
+  # duckduckgo: 无 key fallback
+  provider: auto
+  max_results: 5
+  timeout_seconds: 15
+
+export:
+  save_markdown: true

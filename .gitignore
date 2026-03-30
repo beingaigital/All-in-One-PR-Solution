@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+
+memory/
+sandbox/
+outputs/
+
+data/feedback.db

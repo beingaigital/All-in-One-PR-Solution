@@ -1,0 +1,109 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "rule_id": "m_rule_brand_awareness_general",
+      "rule_type": "general",
+      "name": "品牌认知三段式传播",
+      "description": "所有行业在做品牌认知时需要兼顾“认知-理解-记忆”三个阶段。",
+      "conditions": {
+        "pr_goal": ["品牌认知"]
+      },
+      "application_scenarios": ["plan_generation", "report_generation", "brand_awareness"],
+      "priority": 80,
+      "effects": {
+        "channels_focus": ["核心权威媒体", "社交扩散渠道", "沉浸体验场景"],
+        "content_checklist": ["统一主题与口号", "视觉模板一致", "口碑触发机制"]
+      },
+      "content": "拆解传播节奏为“认知引爆 → 内容深化 → 记忆锚定”。每个阶段要明确渠道与内容，确保受众从知道到记住。"
+    },
+    {
+      "rule_id": "m_rule_social_toc",
+      "rule_type": "industry",
+      "name": "ToC 社交渗透策略",
+      "description": "消费品在社交媒体的组合打法。",
+      "conditions": {
+        "industry": "大消费",
+        "market_type": "ToC",
+        "pr_goal": ["品牌认知", "用户增长"]
+      },
+      "application_scenarios": ["plan_generation", "campaign"],
+      "priority": 70,
+      "effects": {
+        "must_have": ["短视频内容矩阵", "KOL/KOC 阶梯合作", "话题挑战赛"],
+        "metrics": ["完播率", "互动率", "UGC 体量"]
+      },
+      "content": "总体节奏：明星/头部制造权威背书 → 腰部达人拆解场景 → KOC/用户跟拍挑战，确保社交流量逐层传递。"
+    },
+    {
+      "rule_id": "m_rule_b2b_thought_leadership",
+      "rule_type": "industry",
+      "name": "B2B 思想领导力",
+      "description": "面向 ToB 市场时，需要用方法论和行业解决方案建立权威。",
+      "conditions": {
+        "market_type": "ToB",
+        "pr_goal": ["品牌认知", "线索获取"]
+      },
+      "application_scenarios": ["plan_generation", "report_generation"],
+      "priority": 65,
+      "effects": {
+        "assets": ["白皮书", "行业洞察直播", "联合案例发布"],
+        "channels": ["行业媒体/智库", "私域客户社群", "线下闭门会"]
+      },
+      "content": "以“问题洞察 → 方法论 → 解决方案 → 成功案例”结构输出内容，同时安排高层露出和专家同台。"
+    },
+    {
+      "rule_id": "m_rule_crisis_response",
+      "rule_type": "goal",
+      "name": "危机应对 24 小时原则",
+      "description": "危机公关必须在 24 小时内完成回应、举措、跟进三步。",
+      "conditions": {
+        "pr_goal": ["危机公关"]
+      },
+      "application_scenarios": ["plan_generation", "crisis"],
+      "priority": 90,
+      "effects": {
+        "timeline": ["1 小时内建立监测群", "3 小时内确认事实与观点", "12 小时内发布初步声明", "24 小时内提供整改举措"],
+        "roles": ["发言人体系", "法务支持", "客服同步"]
+      },
+      "content": "所有危机方案都要落实监测机制、回应话术、媒介拜访与用户关怀动作，并保持统一口径。"
+    },
+    {
+      "rule_id": "m_rule_launch_campaign",
+      "rule_type": "general",
+      "name": "新品发布三层内容",
+      "description": "新品发布需要讲清楚“产品卖点、场景故事、社会价值”。",
+      "conditions": {
+        "pr_goal": ["新品发布", "销售促进"]
+      },
+      "application_scenarios": ["plan_generation", "product_launch"],
+      "priority": 60,
+      "effects": {
+        "content": ["技术/功能亮点", "典型用户场景", "品牌主张或价值观"],
+        "channels": ["发布会/直播", "站内外种草", "线下体验"]
+      },
+      "content": "内容结构建议：1) 价值主张；2) 卖点拆解；3) 多场景演绎（图文+视频）；4) 口碑/测评背书。"
+    },
+    {
+      "rule_id": "m_rule_local_event",
+      "rule_type": "industry",
+      "name": "线下活动与本地化联动",
+      "description": "面向区域市场时，要结合本地节点与伙伴资源。",
+      "conditions": {
+        "scenario": "plan_generation",
+        "market_type": "ToC"
+      },
+      "application_scenarios": ["plan_generation", "offline_campaign"],
+      "priority": 55,
+      "effects": {
+        "partners": ["地方文旅/商圈", "高校/社群", "本地媒体"],
+        "checklist": ["本地化符号", "城市限定权益", "直播+探店联动"]
+      },
+      "content": "通过“线上预热 + 线下沉浸 + 线上二次扩散”形成闭环，同时安排数据化留资方式衡量活动效果。"
+    }
+  ]
+}
+
+
+
+

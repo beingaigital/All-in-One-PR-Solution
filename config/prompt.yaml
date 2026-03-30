@@ -1,0 +1,4 @@
+# Agent 与各类任务的 prompt 配置
+
+# Agent 底座 system prompt
+system_prompt: system_prompt.txt
